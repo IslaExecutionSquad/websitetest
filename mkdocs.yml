@@ -101,4 +101,4 @@ extra_css:
 
 extra_javascript:
   - theme.js
-  - side.js
+  # - side.js
