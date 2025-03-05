@@ -1,0 +1,104 @@
+site_name: Isla Execution Squad
+site_url: https://www.islaexecutionsquad.com/
+nav:
+  - Home: index.md
+  - Plastic Memories Visual Novel:
+    - Patch Download: patch.md
+    - PlaMemo Trailers: install-guide/trailer.md
+    - Patch Installation:
+      - Introduction: install-guide/Introduction.md
+      - Prerequisites: install-guide/install.md
+      - PC Patch Installation: install-guide/PC.md
+      - Vita Patch Installation: install-guide/vita.md
+      - Linux/Steam Deck Installation: install-guide/linux.md
+      - Playing Through Steam: install-guide/steam.md
+      - Control Options: install-guide/controls.md
+    - Frequently Asked Questions: install-guide/faq.md
+    - Plastic Memories Walkthrough:
+      - Introduction: walkthrough/walkthrough.md
+      - Game Layout: walkthrough/walkthrough2.md
+      - Common Route: walkthrough/walk3.md
+      - Isla Route: walkthrough/walk4.md
+      - Interaction Mode: walkthrough/interact.md
+      - Isla Route Choices: walkthrough/walk6.md
+      - Post-Isla Route Completion: walkthrough/walk5.md
+      - Trophy List: walkthrough/trophy-list.md
+    - Developer Notes: devnotes.md
+    - Credits: credits.md
+    # - Project Resources: install-guide/resources.md
+  - IES Novels: https://novels.islaexecutionsquad.com/
+  - About Us: about.md
+
+theme:
+  name: material
+  custom_dir: overrides
+  palette:
+    # Light Mode
+    - scheme: default
+      toggle:
+        icon: material/weather-night
+        name: Dark mode
+      primary: dark blue
+    # Dark Mode
+    - scheme: slate
+      toggle:
+        icon: material/weather-sunny
+        name: Light mode
+      primary: custom
+  features:
+    # - navigation.footer
+    - navigation.top
+    - navigation.tabs
+    - navigation.expand
+    - navigation.tracking
+    - navigation.expand
+    - toc.integrate
+    - markdown_grid_tables
+    - navigation.indexes
+    - content.footnote.tooltips
+  logo: assets/logo.png
+  favicon: assets/logo.png
+  icon:
+    repo: fontawesome/brands/github
+  font:
+    code: Red Hat Mono
+
+extra:
+  social:
+    - icon: fontawesome/brands/discord
+      link: https://discord.gg/Cpshet4QYH
+      name: Isla Execution Squad Discord
+    - icon: buymeacoffee
+      link: https://www.buymeacoffee.com/thesquad
+    - icon: fontawesome/brands/youtube
+      link: https://www.youtube.com/@islaexecutionsquad
+    - icon: mangadex
+      link: https://mangadex.org/group/350e675f-c836-4941-9a98-be6238e2736f/isla-execution-squad
+
+copyright: Isla Execution Squad
+
+markdown_extensions:
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - attr_list
+  - md_in_html
+  - pymdownx.blocks.caption
+  - pymdownx.escapeall:
+        hardbreak: true
+  - pymdownx.snippets
+  - footnotes
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+
+extra_css:
+  - stylesheets/extra.css
+  - stylesheets/Pirulen.css
+
+extra_javascript:
+  - theme.js
+  - side.js
